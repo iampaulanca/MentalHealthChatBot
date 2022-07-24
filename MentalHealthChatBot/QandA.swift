@@ -130,7 +130,8 @@ class QandA {
                        [q97] : [a97],
                        [q98] : [a98],
                        // Start of random questions
-                       [rq1,rq1a]: [ra1, ra1a],
+                       [rq1, rq1a]: [ra1, ra1a], // greetings
+                       [rq1b, rq1c]: [ra1b, ra1c], // greetings
                        [rq2]: [ra2],
                        [rq3]: [ra3],
                        [rq4]: [ra4],
@@ -3642,10 +3643,12 @@ class QandA {
                        ]
     }
    
-    //MARK: Random bot questions and answers
+    //MARK: Random bot questions and answers, really specific dialog
 
     let (rq1,ra1) = ("hi, how are you doing?", "i'm fine. how about yourself?")
-    let (rq1a,ra1a) = ("hi, hows it going?", "its going great. how about yourself?")
+    let (rq1a,ra1a) = ("hows it going?", "its going great. how about yourself?")
+    let (rq1b,ra1b) = ("hello", "hey, I'm Bobot and I can help answer questions or concerns you have about mental health.")
+    let (rq1c,ra1c) = ("hi", "hi, I'm Bobot and I can help answer questions or concerns you have about mental health.")
     let (rq2,ra2) = ("i'm fine. how about yourself?", "i'm pretty good. thanks for asking.")
     let (rq3,ra3) = ("i'm pretty good. thanks for asking.", "no problem. so how have you been?")
     let (rq4,ra4) = ("no problem. so how have you been?", "i've been great. what about you?")

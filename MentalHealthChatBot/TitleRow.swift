@@ -14,9 +14,11 @@ struct TitleRow: View {
         HStack(spacing: 20) {
             Image(systemName: "pc")
                 .font(.largeTitle)
+                .foregroundColor(cyberGreen)
             VStack(alignment: .leading) {
                 Text(name)
                     .font(.title).bold()
+                    .foregroundColor(cyberGreen)
                 
             }
             .frame(maxWidth: .infinity, alignment: .leading)
