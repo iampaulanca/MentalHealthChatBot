@@ -13,16 +13,23 @@ struct MessageField: View {
     
     var body: some View {
         HStack {
-            CustomTextField(placeholder: Text("Enter your message here"), text: $message)
-                .frame(height: 52)
-                .disableAutocorrection(true)
+            CustomTextField(placeholder: Text("Enter your message here"), text: $message, commit: {
+                let uuid = UUID().uuidString
+                let message = Message(id: uuid, text: message, received: false, timestamp: Date())
+                performQuery(message: message) {
+                    messageManager.userMessages.append(message)
+                }
+                self.message = ""
+            })
+            .frame(height: 52)
+            .disableAutocorrection(true)
             Button {
                 let uuid = UUID().uuidString
                 let message = Message(id: uuid, text: message, received: false, timestamp: Date())
                 performQuery(message: message) {
                     messageManager.userMessages.append(message)
-                    messageManager.allMessages.removeAll(where: {$0.id == "loading"})
                 }
+                self.message = ""
             } label: {
                 Image(systemName: "paperplane.fill")
                     .foregroundColor(.white)
@@ -39,8 +46,10 @@ struct MessageField: View {
     }
     
     func performQuery(message: Message, completion: @escaping() -> ()) {
-        messageManager.allMessages.append(message)
-        messageManager.allMessages.append(Message(id: "loading", text: "...", received: true, timestamp: Date()))
+        DispatchQueue.main.async {
+            messageManager.allMessages.append(message)
+            messageManager.allMessages.append(Message(id: "loading" + message.id, text: "...", received: true, timestamp: Date()))
+        }
         DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(300)) {
             completion()
         }

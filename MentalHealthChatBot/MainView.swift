@@ -14,7 +14,6 @@ struct MainView: View {
         VStack {
             VStack {
                 TitleRow()
-                
                 ScrollViewReader { proxy in
                     ScrollView {
                         ForEach(messagesManager.allMessages, id: \.id) { message in
@@ -32,9 +31,7 @@ struct MainView: View {
                 }
             }
             .background(.blue)
-            
             MessageField(messageManager: messagesManager)
-                
         }
     }
 }
