@@ -1,7 +1,4 @@
 # MentalHealthChatBot
-MentalHealthChatBot
-
-Mental Health chat bot
 
 Resources I used
 
