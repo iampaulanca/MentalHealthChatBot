@@ -1,0 +1,397 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		78005D99288BB54700ACB44F /* MentalHealthChatBotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78005D98288BB54700ACB44F /* MentalHealthChatBotApp.swift */; };
+		78005D9B288BB54700ACB44F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78005D9A288BB54700ACB44F /* ContentView.swift */; };
+		78005D9D288BB54700ACB44F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78005D9C288BB54700ACB44F /* Assets.xcassets */; };
+		78005DA0288BB54700ACB44F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78005D9F288BB54700ACB44F /* Preview Assets.xcassets */; };
+		78005DA2288BB54700ACB44F /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78005DA1288BB54700ACB44F /* Persistence.swift */; };
+		78005DA5288BB54700ACB44F /* MentalHealthChatBot.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 78005DA3288BB54700ACB44F /* MentalHealthChatBot.xcdatamodeld */; };
+		78005DAC288BB57200ACB44F /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78005DAB288BB57200ACB44F /* MainView.swift */; };
+		78005DAE288BB5AB00ACB44F /* QandA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78005DAD288BB5AB00ACB44F /* QandA.swift */; };
+		78005DB0288BBE5600ACB44F /* MessageBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78005DAF288BBE5600ACB44F /* MessageBubble.swift */; };
+		78005DB2288BBE6800ACB44F /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78005DB1288BBE6800ACB44F /* Message.swift */; };
+		78005DB4288BBEA200ACB44F /* MessageField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78005DB3288BBEA200ACB44F /* MessageField.swift */; };
+		78005DB6288BBEF500ACB44F /* TitleRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78005DB5288BBEF500ACB44F /* TitleRow.swift */; };
+		78005DB8288CE97D00ACB44F /* MessagesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78005DB7288CE97D00ACB44F /* MessagesManager.swift */; };
+		78005DBB288CF19800ACB44F /* MessageBot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78005DBA288CF19800ACB44F /* MessageBot.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		78005D95288BB54700ACB44F /* MentalHealthChatBot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MentalHealthChatBot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		78005D98288BB54700ACB44F /* MentalHealthChatBotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentalHealthChatBotApp.swift; sourceTree = "<group>"; };
+		78005D9A288BB54700ACB44F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		78005D9C288BB54700ACB44F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		78005D9F288BB54700ACB44F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		78005DA1288BB54700ACB44F /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		78005DA4288BB54700ACB44F /* MentalHealthChatBot.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MentalHealthChatBot.xcdatamodel; sourceTree = "<group>"; };
+		78005DAB288BB57200ACB44F /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		78005DAD288BB5AB00ACB44F /* QandA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QandA.swift; sourceTree = "<group>"; };
+		78005DAF288BBE5600ACB44F /* MessageBubble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageBubble.swift; sourceTree = "<group>"; };
+		78005DB1288BBE6800ACB44F /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		78005DB3288BBEA200ACB44F /* MessageField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageField.swift; sourceTree = "<group>"; };
+		78005DB5288BBEF500ACB44F /* TitleRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleRow.swift; sourceTree = "<group>"; };
+		78005DB7288CE97D00ACB44F /* MessagesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesManager.swift; sourceTree = "<group>"; };
+		78005DBA288CF19800ACB44F /* MessageBot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBot.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		78005D92288BB54700ACB44F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		78005D8C288BB54700ACB44F = {
+			isa = PBXGroup;
+			children = (
+				78005D97288BB54700ACB44F /* MentalHealthChatBot */,
+				78005D96288BB54700ACB44F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		78005D96288BB54700ACB44F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				78005D95288BB54700ACB44F /* MentalHealthChatBot.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		78005D97288BB54700ACB44F /* MentalHealthChatBot */ = {
+			isa = PBXGroup;
+			children = (
+				78005D98288BB54700ACB44F /* MentalHealthChatBotApp.swift */,
+				78005D9A288BB54700ACB44F /* ContentView.swift */,
+				78005DAB288BB57200ACB44F /* MainView.swift */,
+				78005D9C288BB54700ACB44F /* Assets.xcassets */,
+				78005DA1288BB54700ACB44F /* Persistence.swift */,
+				78005DAF288BBE5600ACB44F /* MessageBubble.swift */,
+				78005DB1288BBE6800ACB44F /* Message.swift */,
+				78005DB3288BBEA200ACB44F /* MessageField.swift */,
+				78005DB5288BBEF500ACB44F /* TitleRow.swift */,
+				78005DAD288BB5AB00ACB44F /* QandA.swift */,
+				78005DA3288BB54700ACB44F /* MentalHealthChatBot.xcdatamodeld */,
+				78005D9E288BB54700ACB44F /* Preview Content */,
+				78005DB7288CE97D00ACB44F /* MessagesManager.swift */,
+				78005DBA288CF19800ACB44F /* MessageBot.swift */,
+			);
+			path = MentalHealthChatBot;
+			sourceTree = "<group>";
+		};
+		78005D9E288BB54700ACB44F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				78005D9F288BB54700ACB44F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		78005D94288BB54700ACB44F /* MentalHealthChatBot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78005DA8288BB54700ACB44F /* Build configuration list for PBXNativeTarget "MentalHealthChatBot" */;
+			buildPhases = (
+				78005D91288BB54700ACB44F /* Sources */,
+				78005D92288BB54700ACB44F /* Frameworks */,
+				78005D93288BB54700ACB44F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MentalHealthChatBot;
+			productName = MentalHealthChatBot;
+			productReference = 78005D95288BB54700ACB44F /* MentalHealthChatBot.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		78005D8D288BB54700ACB44F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					78005D94288BB54700ACB44F = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 78005D90288BB54700ACB44F /* Build configuration list for PBXProject "MentalHealthChatBot" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 78005D8C288BB54700ACB44F;
+			productRefGroup = 78005D96288BB54700ACB44F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				78005D94288BB54700ACB44F /* MentalHealthChatBot */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		78005D93288BB54700ACB44F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78005DA0288BB54700ACB44F /* Preview Assets.xcassets in Resources */,
+				78005D9D288BB54700ACB44F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		78005D91288BB54700ACB44F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78005DA5288BB54700ACB44F /* MentalHealthChatBot.xcdatamodeld in Sources */,
+				78005DB4288BBEA200ACB44F /* MessageField.swift in Sources */,
+				78005DAE288BB5AB00ACB44F /* QandA.swift in Sources */,
+				78005DB6288BBEF500ACB44F /* TitleRow.swift in Sources */,
+				78005DA2288BB54700ACB44F /* Persistence.swift in Sources */,
+				78005DB0288BBE5600ACB44F /* MessageBubble.swift in Sources */,
+				78005D9B288BB54700ACB44F /* ContentView.swift in Sources */,
+				78005DB2288BBE6800ACB44F /* Message.swift in Sources */,
+				78005DB8288CE97D00ACB44F /* MessagesManager.swift in Sources */,
+				78005DBB288CF19800ACB44F /* MessageBot.swift in Sources */,
+				78005DAC288BB57200ACB44F /* MainView.swift in Sources */,
+				78005D99288BB54700ACB44F /* MentalHealthChatBotApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		78005DA6288BB54700ACB44F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		78005DA7288BB54700ACB44F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		78005DA9288BB54700ACB44F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MentalHealthChatBot/Preview Content\"";
+				DEVELOPMENT_TEAM = 85Z4E9D6W3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ancajima.Paul.MentalHealthChatBot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		78005DAA288BB54700ACB44F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MentalHealthChatBot/Preview Content\"";
+				DEVELOPMENT_TEAM = 85Z4E9D6W3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ancajima.Paul.MentalHealthChatBot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		78005D90288BB54700ACB44F /* Build configuration list for PBXProject "MentalHealthChatBot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78005DA6288BB54700ACB44F /* Debug */,
+				78005DA7288BB54700ACB44F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78005DA8288BB54700ACB44F /* Build configuration list for PBXNativeTarget "MentalHealthChatBot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78005DA9288BB54700ACB44F /* Debug */,
+				78005DAA288BB54700ACB44F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		78005DA3288BB54700ACB44F /* MentalHealthChatBot.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				78005DA4288BB54700ACB44F /* MentalHealthChatBot.xcdatamodel */,
+			);
+			currentVersion = 78005DA4288BB54700ACB44F /* MentalHealthChatBot.xcdatamodel */;
+			path = MentalHealthChatBot.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 78005D8D288BB54700ACB44F /* Project object */;
+}
